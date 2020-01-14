@@ -1,0 +1,52 @@
+{
+  "uuid": "91a70d6b-be07-490e-a13a-e9dcd1954a31",
+  "guuid": "a4ef5778-96ba-464e-a66f-9024f5b9bc9d",
+  "code": 200,
+  "data": {
+    "timeWindow": {
+      "low": 1573344000000,
+      "high": 1574639999000,
+      "timezoneOffset": 0
+    },
+    "limit": 10,
+    "offset": 0,
+    "total": 2,
+    "result": [
+      {
+        "accountUserRoles": {
+          "STORE": {
+            "COPN00000098968000000000022EE4BCF3F43B01~STOR00000098968000000001022EE4BCFB05EC41": [
+              "ADMIN",
+              ""
+            ]
+          }
+        },
+        "createdAt": 1573511497944,
+        "email": "lastprofane+dev@gmail.com",
+        "name": "Wilton Lazary",
+        "notifiable": true,
+        "tid": "ACUS00000098968000000001022F06097C7E9705",
+        "updatedAt": 1573511497944
+      },
+      {
+        "accountUserRoles": {
+          "STORE": {
+            "COPN00000098968000000000022EE4BCF3F43B01~STOR00000098968000000001022EE4BCFB05EC41": [
+              "ADMIN",
+              ""
+            ]
+          }
+        },
+        "createdAt": 1574096716331,
+        "email": "wiltonlazary@gmail.com",
+        "name": "wilton lazary main",
+        "notifiable": true,
+        "tid": "ACUS00000098968000000001022F3B4329E6DCE7",
+        "updatedAt": 1574096716331
+      }
+    ]
+  },
+  "timestamp": 1574635122454,
+  "host": "10.244.129.50:8085",
+  "elapsed": 17
+}

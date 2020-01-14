@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <script>
+      var _ver = parseInt("«ver»");
+      console.log("[FLUTTER FRAME WRAPPER]");
+      console.log(`version: ${_ver} / ${new Date(_ver)}`);
+      window["global"] = () => top;
+      window["setLocationHash"] =  top["setLocationHash"] ;
+      document.addEventListener("contextmenu", event => event.preventDefault());
+
+      window.addEventListener("hashchange", () => {
+        //console.log(`frame hash: ${window.location.hash.substring(1)}`);
+      });
+    </script>
+  </head>
+  <body>
+    <script src="main.dart.js?_ver=«ver»"></script>
+  </body>
+</html>
