@@ -8,3 +8,4 @@ flutter upgrade --force
 flutter config --enable-web
 flutter pub get
 flutter build apk --debug
+flutter upgrade

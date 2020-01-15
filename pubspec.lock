@@ -327,7 +327,7 @@ packages:
   laz_flutter_web:
     dependency: "direct main"
     description:
-      path: "../plugins/laz_flutter_web"
+      path: "plugins/laz_flutter_web"
       relative: true
     source: path
     version: "1.0.0+1"

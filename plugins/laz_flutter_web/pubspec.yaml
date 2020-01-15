@@ -1,0 +1,20 @@
+name: laz_flutter_web
+version: 1.0.0+1
+
+flutter:
+  plugin:
+    platforms:
+      web:
+        pluginClass: LazFlutterWebPlugin
+        fileName: laz_flutter_web.dart
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  js: any
+
+environment:
+  sdk: ">=2.6.0 <3.0.0"
+  flutter: ">=1.5.0 <2.0.0"
