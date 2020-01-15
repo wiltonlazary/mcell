@@ -8,13 +8,13 @@ class LoginModel extends ViewModel {
       C(
         key: "email",
         label: "Email",
-        value: "lastprofane@gmail.com",
+        value: "",
         constraints: [emailConstraint(), maxLengthConstraint(255)],
       );
       C(
         key: "password",
         label: "Senha",
-        value: "123456",
+        value: "",
         constraints: [minLengthConstraint(6), maxLengthConstraint(255)],
       );
     });
