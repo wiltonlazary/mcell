@@ -57,22 +57,19 @@ class NavigatorRouter {
 
   @optionalTypeArgs
   static Future<bool> pop<T extends Object>(NavigatorState navigatorState, [T result]) async {
-    final res = navigatorState.pop();
+    navigatorState.pop();
+    Route _route;
 
-    if (res) {
-      Route _route;
+    navigatorState.popUntil((route) {
+      _route = route;
+      return true;
+    });
 
-      navigatorState.popUntil((route) {
-        _route = route;
-        return true;
-      });
-
-      if (_route != null) {
-        await pushState(_route.settings.name);
-      }
+    if (_route != null) {
+      await pushState(_route.settings.name);
     }
 
-    return res;
+    return _route != null;
   }
 
   static String normalizeRouteName(String routeName) => "/" + routeName.substring(1).replaceAll("/", "\\");
